@@ -2,26 +2,20 @@
 
 # ------------------------(max to 80 columns)-----------------------------------
 # author by : （学员ID)
-# created:  2019.7.10
+# created:  2019.11.23
 
 # Description:
-#   学习类的使用方法
+#   使用英雄的类
 # ------------------------(max to 80 columns)-----------------------------------
-
-import random
 
 from class_hero import Hero
 
-cjsh = Hero()
+cjsh = Hero('苍狼末裔', '成吉思汗', '射手ARCHER')
+#cjsh.show_me()
+print(cjsh.name)
+print(cjsh.position)
+print(cjsh.ab_difficulty)
 
-cjsh.skin = '苍狼末裔'
-cjsh.name = '成吉思汗'
-cjsh.position = '射手ARCHER'
-cjsh.ab_viability = random.randint(1,100)
-cjsh.ab_damage  = random.randint(1,100)
-cjsh.ab_effect = random.randint(1,100)
-cjsh.ab_difficulty = random.randint(1,100)
-
-cjsh.show_story()
-cjsh.show_me()
-cjsh.show_history()
+#cjsh.name = '张三'
+cjsh.ab_difficulty = 999
+print(cjsh.ab_difficulty)

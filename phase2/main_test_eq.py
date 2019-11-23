@@ -5,21 +5,16 @@
 # created:  2019.11.23
 
 # Description:
-#   my first class
+#   使用道具的类
 # ------------------------(max to 80 columns)-----------------------------------
 
+from class_equipment import Equipment
+from class_eq_attack import EQAttack
 
-from my_first_class import MyClass
 
-MyClass.work()
+eq1 = Equipment()
+eq1.show_me()
 
-a = MyClass()
-print(a.name)
-print(a.sex)
-#print(a.__bank_account)
-#print(a.__bank_password)
-print(a.read_account( ))
-
-a.work()
-a.name = 'Archer'
-a.work()
+eq2 = EQAttack()
+eq2.show_me()
+eq2.show_me_unique()
