@@ -8,14 +8,13 @@
 #   my first class
 # ------------------------(max to 80 columns)-----------------------------------
 
-
 from my_first_class import MyClass
 
-MyClass.work()
-
 a = MyClass()
+a.name = 'Arche'
 print(a.name)
 print(a.sex)
+
 #print(a.__bank_account)
 #print(a.__bank_password)
 print(a.read_account( ))
